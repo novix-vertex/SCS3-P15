@@ -34,13 +34,15 @@ body {
 }
 
 body {
-    background-image: url('assets/images/background.png');
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary))
 }
 
 main {
     height: 100%;
+    background-image: url('assets/images/background.png');
+    background-position: center;
+    background-size: cover;
+
 }
 
 .hero {
@@ -312,4 +314,90 @@ header .link:active {
     line-height: 20px;
     font-size: 12px;
     text-align: center;
+}
+
+.workflow-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-block: 40px;
+    width: 100%;
+}
+
+.workflow-section .workflow-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.workflow-section .workflow-heading h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.workflow-section .workflow-heading h2:nth-child(1) {
+    color: var(--text-white);
+    opacity: 0.8;
+}
+
+.workflow-section .workflow-heading h2:nth-child(2) {
+    color: var(--neon-primary);
+    opacity: 0.6;
+}
+
+.workflow-section .workflow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.workflow-section .workflow .workflow-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+
+    max-width: 230px;
+
+    border: 3px solid var(--card-bg);
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+
+.workflow-section .workflow .workflow-item img {
+    height: 40px;
+    width: 40px;
+}
+
+.workflow-section .workflow .workflow-item .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.workflow-section .workflow .workflow-item .content h2 {
+    color: var(--neon-primary);
+    font-size: 18px;
+    font-family: orbitron;
+    opacity: 0.6;
+}
+
+.workflow-section .workflow .workflow-item .content h3 {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.workflow-section .workflow .workflow-item .content p {
+    color: var(--text-disabled);
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 12px;
 }
