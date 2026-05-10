@@ -108,3 +108,13 @@ header .link:hover,
 header .link:active {
     box-shadow: 0 2px 5px var(--neon-primary);
 }
+
+.hunter {
+    height: 70%;
+    position: absolute;
+    top: -8%;
+    left: 80%;
+    transform: translateX(-80%);
+    z-index: 2;
+
+}
