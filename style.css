@@ -1,0 +1,40 @@
+:root {
+    --bg-primary: #02060B;
+    --bg-secondary: #07111A;
+    --card-bg: #0A141D;
+
+    --neon-primary: #00F5D4;
+    --neon-secondary: #00FFF0;
+    --teal: #00C9A7;
+
+    --text-white: #F4F7FA;
+    --text-gray: #A8B3BD;
+    --text-muted: #6E7B87;
+
+    --metallic: #D4D8DD;
+    --shadow: #1C242C;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('assets/fonts/orbitron-normal.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: orbitron;
+    letter-spacing: 4px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
