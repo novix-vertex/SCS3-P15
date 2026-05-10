@@ -267,6 +267,20 @@ header .link:active {
     font-size: 14px;
 }
 
+.hero-right .separator1,
+.hero-right .separator2 {
+    position: absolute;
+    height:30px;
+    width:3px;
+    left:75px;
+}
+.hero-right .separator1{
+    top:70px;
+}
+.hero-right .separator2{
+    bottom:70px;
+}
+
 .hero .stats-section {
     background: #3c3a3a44;
     backdrop-filter: blur(5px);
@@ -315,7 +329,7 @@ header .link:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
 
 .hero .stats-section .stat h2 {
@@ -324,7 +338,7 @@ header .link:active {
     font-weight: 500;
     font-family: orbitron;
     text-align: center;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .hero .stats-section .stat h4 {
