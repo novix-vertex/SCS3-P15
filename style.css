@@ -9,7 +9,7 @@
 
     --text-white: #F4F7FA;
     --text-gray: #A8B3BD;
-    --text-muted: #6E7B87;
+    --text-disabled: #6E7B87;
 
     --metallic: #D4D8DD;
     --shadow: #1C242C;
@@ -25,7 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: orbitron;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 html,
@@ -44,14 +44,67 @@ main {
     height: 100%;
 }
 
-.hero{
-    min-height:100vh;
-    width:100%;
-}
-header,
-.hero-section,
-.stats-section{
-    position:relative;
-    z-index:2;
+.hero {
+    min-height: 100vh;
+    width: 100%;
 }
 
+header,
+.hero-section,
+.stats-section {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+header img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--text-white);
+    text-decoration: underline;
+    text-decoration-color: var(--neon-secondary);
+    text-underline-offset: 10px;
+    text-shadow: 0 2px 5px var(--neon-secondary);
+}
+
+header .link {
+    color: var(--text-white);
+    border: 2px solid var(--neon-secondary);
+    border-radius: 24px;
+    background: transparent;
+    font-size: 14px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    cursor: pointer;
+}
+
+header .link:active {
+    transform: scale(.95);
+}
+
+header .link:hover,
+header .link:active {
+    box-shadow: 0 2px 5px var(--neon-primary);
+}
