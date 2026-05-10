@@ -5,7 +5,6 @@
 
     --neon-primary: #00F5D4;
     --neon-secondary: #00FFF0;
-    --teal: #00C9A7;
     --teal-light: #00C9A711;
     --teal-medium: #00C9A744;
     --teal-semimedium: #00C9A788;
@@ -13,9 +12,6 @@
     --text-white: #F4F7FA;
     --text-gray: #A8B3BD;
     --text-disabled: #6E7B87;
-
-    --metallic: #D4D8DD;
-    --shadow: #1C242C;
 }
 
 @font-face {
@@ -113,7 +109,7 @@ header .link:active {
 }
 
 .hero {
-    min-height:100vh;
+    min-height: 100vh;
     color: var(--text-white);
     overflow: hidden;
     position: relative;
@@ -249,16 +245,71 @@ header .link:active {
     color: var(--text-disabled);
     font-weight: 200;
     line-height: 20px;
+    font-size: 14px;
 }
 
 .hero .stats-section {
-    background: #00000077;
-    backdrop-filter: blur(6px);
-    height: 200px;
+    background: #3c3a3a44;
+    backdrop-filter: blur(5px);
     width: 95%;
     left: 50%;
     bottom: 0%;
     transform: translate(-50%);
     position: absolute;
     border-radius: 10px;
+    padding: 40px 80px;
+
+    color: var(--text-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hero .stats-section img {
+    height: 150px;
+    position: absolute;
+}
+
+.hero .stats-section .star1 {
+    top: -50%;
+    left: 0;
+
+}
+
+.hero .stats-section .star2 {
+    top: -60%;
+    right: 0;
+    height: 180px;
+}
+
+.hero .stats-section hr {
+    height: 70px;
+    width: 1px;
+    opacity: 0.4;
+    background-color: var(--text-gray);
+}
+
+.hero .stats-section .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .stats-section .stat h2 {
+    color: var(--neon-secondary);
+    opacity: 0.7;
+    font-weight: 500;
+    font-family: orbitron;
+    text-align: center;
+}
+
+.hero .stats-section .stat h4 {
+    color: var(--text-gray);
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
 }
