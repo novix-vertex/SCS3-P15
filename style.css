@@ -59,6 +59,13 @@ header,
     z-index: 2;
 }
 
+/* .hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -118,21 +125,27 @@ header .link:active {
 
 }
 
+.hero-center{
+    position: relative;
+}
+
 .hunter {
-    height: 90%;
     position: absolute;
-    top: -12%;
-    left: 80%;
-    transform: translateX(-80%);
+    top: 10px;
+    left: 25%;
+    transform: translate(-10%,-15%);
     z-index: 2;
+    width:75vw;
 }
 
 .hero-left {
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
     padding: 20px 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .hero-left h4 {
@@ -173,37 +186,73 @@ header .link:active {
 .hero-left .links {
     display: flex;
     margin-block: 20px;
-    gap:10px;
+    gap: 10px;
 }
 
-.hero-left .links .link1,.hero-left .links .link2 {
+.hero-left .links .link1,
+.hero-left .links .link2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     gap: 20px;
     cursor: pointer;
-    padding-inline:25px;
-    padding-block:10px;
-    border-radius:4px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    border-radius: 4px;
     font-size: 12px;
     opacity: 0.8;
 }
-.hero-left .links .link1{
-    background: linear-gradient(to right,transparent, var(--teal-light), var(--teal-medium),var(--teal-semimedium),var(--neon-primary));
+
+.hero-left .links .link1 {
+    background: linear-gradient(to right, transparent, var(--teal-light), var(--teal-medium), var(--teal-semimedium), var(--neon-primary));
     border: 2px solid var(--neon-primary);
- }
-.hero-left .links i{
-    color:var(--text-white);
 }
-.hero-left .links .link2 i{
+
+.hero-left .links i {
+    color: var(--text-white);
+}
+
+.hero-left .links .link2 i {
     border: 1px solid var(--neon-primary);
     border-radius: 50%;
-    padding:10px;
+    padding: 10px;
 }
-.hero-left .links .link1:active,.hero-left .links .link2:active{
+
+.hero-left .links .link1:active,
+.hero-left .links .link2:active {
     transform: scale(0.95);
 }
 
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 20px 50px;
+}
 
+.hero-right .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+.hero-right .feature img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 18px;
+    box-shadow: 0 0px 10px var(--neon-primary);
+}
+
+.hero-right .feature h4 {
+    color: var(--text-disabled);
+    font-weight: 200;
+    line-height: 20px;
+}
