@@ -201,7 +201,6 @@ header .link:active {
     border-radius: 50%;
     padding:10px;
 }
-color:var(--text-white);
 .hero-left .links .link1:active,.hero-left .links .link2:active{
     transform: scale(0.95);
 }
