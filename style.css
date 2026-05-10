@@ -315,6 +315,7 @@ header .link:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:10px;
 }
 
 .hero .stats-section .stat h2 {
@@ -323,6 +324,7 @@ header .link:active {
     font-weight: 500;
     font-family: orbitron;
     text-align: center;
+    font-size:30px;
 }
 
 .hero .stats-section .stat h4 {
@@ -333,8 +335,6 @@ header .link:active {
     text-align: center;
 }
 
-
-/*PROJECTS*/
 
 .projects-section {
     display: flex;
@@ -494,9 +494,6 @@ header .link:active {
     border-radius: 50%;
 }
 
-
-
-/*WORKFLOW*/
 
 .workflow-section {
     display: flex;
