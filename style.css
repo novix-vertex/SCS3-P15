@@ -19,6 +19,16 @@
     src: url('assets/fonts/orbitron-normal.woff2');
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +44,7 @@ body {
 }
 
 body {
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary))
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
 }
 
 main {
@@ -128,6 +138,7 @@ header .link:active {
     transform: translate(-10%, -15%);
     z-index: 2;
     width: 75vw;
+    animation: fadeUp 3s ease-in-out;
 }
 
 .hero-left {
@@ -141,7 +152,7 @@ header .link:active {
 }
 
 .hero-left h4 {
-    color: var(--teal);
+    color: var(--neon-primary);
     font-weight: 200;
     font-family: helvetica;
     padding-left: 5px;
@@ -155,7 +166,7 @@ header .link:active {
 }
 
 .hero-left h2 {
-    color: var(--teal);
+    color: var(--neon-primary);
     font-weight: 700;
     font-size: 82px;
     line-height: 40px;
@@ -383,7 +394,7 @@ header .link:active {
 .projects-section .projects .project .img-container {
     cursor: pointer;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .projects-section .projects .project .img-container img {
@@ -413,7 +424,7 @@ header .link:active {
 
 .projects-section .projects .project .img-container img:hover {
     transform: scale(1.1);
-    
+
 }
 
 /* .projects-section .projects .project .img-container::before {
@@ -573,4 +584,24 @@ header .link:active {
     font-weight: 200;
     line-height: 20px;
     font-size: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    color: var(--text-disabled);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-disabled);
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
