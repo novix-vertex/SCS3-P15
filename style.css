@@ -6,6 +6,9 @@
     --neon-primary: #00F5D4;
     --neon-secondary: #00FFF0;
     --teal: #00C9A7;
+    --teal-light: #00C9A711;
+    --teal-medium: #00C9A744;
+    --teal-semimedium: #00C9A788;
 
     --text-white: #F4F7FA;
     --text-gray: #A8B3BD;
@@ -16,7 +19,7 @@
 }
 
 @font-face {
-    font-family: 'Orbitron';
+    font-family: 'orbitron';
     src: url('assets/fonts/orbitron-normal.woff2');
 }
 
@@ -24,7 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: orbitron;
+    font-family: helvetica;
     letter-spacing: 1px;
 }
 
@@ -109,12 +112,99 @@ header .link:active {
     box-shadow: 0 2px 5px var(--neon-primary);
 }
 
+.hero {
+    min-height: calc(100vh - 90px);
+    color: var(--text-white);
+
+}
+
 .hunter {
-    height: 70%;
+    height: 90%;
     position: absolute;
-    top: -8%;
+    top: -12%;
     left: 80%;
     transform: translateX(-80%);
     z-index: 2;
-
 }
+
+.hero-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding: 20px 80px;
+}
+
+.hero-left h4 {
+    color: var(--teal);
+    font-weight: 200;
+    font-family: helvetica;
+    padding-left: 5px;
+}
+
+.hero-left h1 {
+    color: var(--text-white);
+    font-weight: 800;
+    font-size: 100px;
+    font-family: orbitron;
+}
+
+.hero-left h2 {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 40px;
+    font-family: orbitron;
+}
+
+.hero-left h3 {
+    color: var(--text-gray);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+
+.hero-left p {
+    color: var(--text-disabled);
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.hero-left .links {
+    display: flex;
+    margin-block: 20px;
+    gap:10px;
+}
+
+.hero-left .links .link1,.hero-left .links .link2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 20px;
+    cursor: pointer;
+    padding-inline:25px;
+    padding-block:10px;
+    border-radius:4px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.hero-left .links .link1{
+    background: linear-gradient(to right,transparent, var(--teal-light), var(--teal-medium),var(--teal-semimedium),var(--neon-primary));
+    border: 2px solid var(--neon-primary);
+ }
+.hero-left .links i{
+    color:var(--text-white);
+}
+.hero-left .links .link2 i{
+    border: 1px solid var(--neon-primary);
+    border-radius: 50%;
+    padding:10px;
+}
+color:var(--text-white);
+.hero-left .links .link1:active,.hero-left .links .link2:active{
+    transform: scale(0.95);
+}
+
+
+
