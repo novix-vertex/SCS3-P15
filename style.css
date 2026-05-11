@@ -463,8 +463,7 @@ header .link:active {
 
 
 .projects-section .projects .project .img-container img:hover {
-    /* transform: scale(1.1); */
-
+    transform: scale(1.1);
 }
 
 
