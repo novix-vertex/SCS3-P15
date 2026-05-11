@@ -652,6 +652,7 @@ header .link:active {
 
 .contact-section .left h2 span {
     color: var(--neon-primary);
+    font-size: 30px;
 }
 
 .contact-section p,
